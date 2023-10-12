@@ -10,8 +10,11 @@
         name: "{{vpc_name}}"
         cidr_block: "{{vpcCidr}}"
         region: "{{region}}"
-        dns_support: yes
-        dns_hostname: yes
-        tenancy: default
         state: "{{state}}"
+        tags:
+          - key: "dns_support"
+            value: "yes"
+          - key: "dns_hostname"
+            value: "yes"
+        tenancy: default
       register: vpcout
