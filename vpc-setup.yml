@@ -14,7 +14,7 @@
         tags:
           - key: "dns_support"
             value: "yes"
-          - key: "dns_hostname"
+          - key: "dns_hostnames"
             value: "yes"
         tenancy: default
       register: vpcout
